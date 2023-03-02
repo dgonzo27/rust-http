@@ -111,8 +111,6 @@ In our current implementation, the HTTP headers are ignored in both the request 
 
 The implementation of our server exists in the `src/server.rs` file.  This implementation is based on a single thread, which is not best practice in a production-scenario.  Explore the [thread](https://doc.rust-lang.org/std/thread/index.html) and [sync](https://doc.rust-lang.org/std/sync/index.html) modules from the Rust standard library and convert the single-threaded server into a multi-threaded server.
 
-From there, you can 
-
 ### Asynchronous Rust
 
 After getting familiar with multi-threaded principles, you are encouraged to dive into the world of [asynchronous Rust](https://rust-lang.github.io/async-book/03_async_await/01_chapter.html).  A popular asynchronous runtime for Rust is called [Tokio](https://tokio.rs).  It's been built and used by large organizations like AWS, Azure, Discord, Facebook, Dropbox and more - so be sure to check it out!
